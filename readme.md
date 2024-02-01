@@ -1,65 +1,61 @@
-## Tailwind Starter
+## DOM
 
-1. ``` npm init ```
+### Selectors :
 
-2. 
-``` 
-npm install -D tailwindcss
+- getElementById ;
+- getElemenetByTagName ;
+- getElementByClassName ;
+- getElementByName ;
+- querySelector ;
+- querySelectorAll ;
 
-npx tailwindcss init 
-```
-
-3. 
-index.html
-```
-<!doctype html>
-<html>
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body>
-  <h1 class="text-3xl font-bold underline">
-    Hello world!
-  </h1>
-</body>
-</html>
-```
-
-4. styles/style.css
+<br>
 
 ```
-
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
+getElementById - Elementlarni id orqali chaqirish uchun ishlatiladi.
+Misol uchun : document.getElementById(#id)
+```
+<br>
 
 ```
-
-
-5. Configuration tailwind.config.js
-
-tailwind.config.js
+getElementByTagName - Elementlarni HTML teglari orqali chaqirish uchun ishlatiladi.
+Misol uchun : document.getElementByTagName('HTMLtag(div, h1, p ...)')
+```
+<br>
 
 ```
-
-/** @type {import('tailwindcss').Config} */
-module.exports = {
-  content: ["./index.html", "./pages/**/*.html/"],
-  theme: {
-    extend: {},
-  },
-  plugins: [],
-}
-
+getElementByClassName - Elementlarni class name lari orqali chaqirish uchun ishlatiladi.
+Misol uchun : document.getElementByClassName('.className')
+```
+<br>
 
 ```
-
-6. watching pages
+getElementByNmae - Elementlarni "name" atributi orqali chaqirish uchun ishlatiladi.
+Misol uchun : getElementByName('name')
+```
+<br>
 
 ```
-npx tailwindcss -i ./styles/index.css -o ./styles/output.css --watch
+querySelector - Bu selector universal selector hisoblanadi. Elementlarni "#id" "TagName" "ClasName" "Name" lari orqali chaqirish uchun ishlatiladi.
+Misol uchun : querySelector(#id, .ClassName TagName Name ...)
+```
+<br>
 
 ```
+querySelectorAll - Bu selector esa elementlarni kop takrorlanuvchi elementlarni faqatgina ".ClassName" va "TagName" orqali chaqirish uchun iwlatiladi. 
+Misol uchun : querySelectorAll(.ClassName , TagName)
+```
+<br>
+<hr>
+<br>
+
+### Atributes :
+
+- getAttribute(name) ;
+- setAttribute(name , value) ;
+- hasAttribute(name) / bolean ;
+
+
+
+
+
